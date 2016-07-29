@@ -25,10 +25,9 @@
 @import 'components/cards/grid';
 @import 'components/cards/cards';
 @import 'components/lists/list-set';
-@import 'components/lists/list-skills';
 @import 'components/buttons/buttons';
 @import 'components/form-box/form-control';
-@import 'components/image-box/image-flex';
+@import 'components/media-box/image-flex';
 
 /*PAGES - scope view pages definitions*/
 

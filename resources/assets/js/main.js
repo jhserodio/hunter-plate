@@ -1,5 +1,5 @@
 import Carambola from './components/componentA';
 
-const quadrada = "QUADRADA";
+const quadrada = "QUADRADA 1";
 
 Carambola(quadrada);

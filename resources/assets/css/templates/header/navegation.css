@@ -1,3 +1,20 @@
 .navegation {
   display: block;
 }
+
+.navegation .menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navegation .menu li {
+  margin: 0 var(--space-base);
+}
+
+.navegation .menu li:first-child {
+  margin-left: 0;
+}
+
+.navegation .menu li:last-child {
+  margin-right: 0;
+}

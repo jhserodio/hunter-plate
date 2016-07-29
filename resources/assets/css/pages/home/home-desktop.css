@@ -1,5 +1,5 @@
 @media (--screen-large) {
   .home-page {
-    background: var(--gray-nude);
+    /*background: var(--gray-nude);*/
   }
 }

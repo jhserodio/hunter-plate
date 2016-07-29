@@ -1,5 +1,5 @@
 .logo {
-  color: white;
+  color: var(--brand-dark);
   text-transform: uppercase;
   display: flex;
   flex-direction: column;

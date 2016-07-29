@@ -25,8 +25,9 @@ var postcss        = require('gulp-postcss'),
     htmlmin        = require('gulp-htmlmin'),
 
   // javascript compress
-    babel          = require('gulp-babel'),
-    uglify         = require('gulp-uglify'),
+      webpack       = require('webpack-stream'),
+      webpackconfig = require('./webpack.config.js'),
+      uglify         = require('gulp-uglify'),
 
   // utilities
     concat         = require('gulp-concat'),
@@ -51,7 +52,7 @@ var src_css   = "resources/assets/css/style.css",
     dest_img  = "public/images",
     dest_js   = "public/js",
     dest_html = "public",
-    wtc_css   = "resources/assets/css/**/*.css",
+    wtc_css   = "resources/assets/css/**/*",
     wtc_html  = src_html,
     wtc_js    = src_js,
     wtc_img   = src_img,
@@ -116,8 +117,7 @@ gulp.task('postcss', function () {
     .pipe(sourcemaps.init())
     .pipe(postcss(processors))
     .pipe(sourcemaps.write("map"))
-    .pipe(gulp.dest(dest_css))
-    .pipe(connect.reload());
+    .pipe(gulp.dest(dest_css));
 });
 // prod
 gulp.task('postcss:prod', function () {
@@ -145,26 +145,20 @@ gulp.task('copy-fonts', function() {
 // copy javascript files
 
 // dev
-gulp.task('babel', function() {
-  return gulp.src(src_js)
-         .pipe(plumber())
-         .pipe(babel({
-           presets: ['es2015']
-         }))
-         .pipe(concat('main.js'))
-         .pipe(sourcemaps.write('.'))
-         .pipe(gulp.dest(dest_js));
+gulp.task('webpack', function(){
+  return gulp.src(wtc_js)
+    .pipe(plumber())
+    .pipe(webpack(webpackconfig))
+    .pipe(gulp.dest(dest_js))
 });
+
 // prod
-gulp.task('babel:prod', function() {
-  return gulp.src(src_js)
-         .pipe(babel({
-           presets: ['es2015']
-         }))
-         .pipe(concat('main.js'))
-         .pipe(sourcemaps.write('.'))
-         .pipe(uglify())
-         .pipe(gulp.dest(dest_js));
+gulp.task('webpack:prod', function(){
+  return gulp.src(wtc_js)
+    .pipe(plumber())
+    .pipe(webpack(webpackconfig))
+    .pipe(uglify())
+    .pipe(gulp.dest(dest_js))
 });
 
 // html minifier
@@ -192,7 +186,7 @@ gulp.task('browsersync', function(){
 // watch
 gulp.task('watch', ['browsersync'], function(){
   gulp.watch(wtc_css, ['postcss', reload]);
-  gulp.watch(wtc_js, ['babel', reload]);
+  gulp.watch(wtc_js, ['webpack', reload]);
   gulp.watch(wtc_fonts, ['copy-fonts', reload]);
   gulp.watch(wtc_img, ['imagemin', reload]);
   gulp.watch(wtc_html, ['htmlmin', reload]);
@@ -202,4 +196,4 @@ gulp.task('watch', ['browsersync'], function(){
 gulp.task('default', ['watch']);
 
 // production task
-gulp.task('production', ['postcss:prod', 'babel:prod', 'copy-fonts', 'imagemin', 'htmlmin'])
+gulp.task('production', ['postcss:prod', 'webpack:prod', 'copy-fonts', 'imagemin', 'htmlmin'])

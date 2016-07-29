@@ -1,6 +1,7 @@
 .container {
-  max-width: var(--width-base);
-  margin: 0 auto;
+  max-width : var(--width-base);
+  width     : var(--width-base);
+  margin    : 0 auto;
 }
 
 @media (--screen-large) {

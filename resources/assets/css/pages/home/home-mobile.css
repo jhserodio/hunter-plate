@@ -1,6 +1,6 @@
 @media (--screen-small) {
   .home-page {
     background: var(--brand-dark);
-    color: white;
+    color: red;
   }
 }

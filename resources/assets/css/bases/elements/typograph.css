@@ -1,0 +1,35 @@
+a {
+  color: var(--brand-base);
+}
+
+strong {
+  font-weight : var(--weight-bold);
+  font-size: var(--size-large);
+}
+
+small {
+  font-size : var(--size-small);
+}
+
+p {
+  font-size   : var(--size-base);
+  line-height : var(--line-default);
+  font-weight : var(--weight-base);
+}
+
+span {
+  color: var(--gray-light);
+}
+
+time,
+blockquote,
+address,
+label {
+  font-size : var(--size-small);
+  color     : var(--gray-light);
+}
+
+:--heading {
+  font-weight : var(--weight-base);
+  line-height : var(--line-large);
+}

@@ -1,0 +1,16 @@
+:root {
+
+  /*brand colors*/
+  --brand-base  : #004D85;
+  --brand-other : #91110F;
+  --brand-dark  : #040C21;
+  --brand-light : #00BCD1;
+
+  /*gray scale*/
+  --gray-base  : #4F4F4F;
+  --gray-dark  : #141414;
+  --gray-light : #ACBFBF;
+  --gray-nude  : #E3E3E3;
+
+  --brand-half : color(var(--brand-dark) alpha(50%));
+}

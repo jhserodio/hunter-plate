@@ -1,0 +1,29 @@
+
+:--btn {
+  color           : white;
+  border-radius   : var(--radius-base);
+  font-size       : var(--size-base);
+  font-weight     : var(--weight-base);
+  background      : var(--brand-base);
+  border          : none;
+  outline         : 0;
+  box-shadow      : none;
+  padding         : var(--space-base) var(--space-large);
+  line-height     : normal;
+  display         : inline-block;
+  text-decoration : none;
+  text-transform  : uppercase;
+  box-sizing      : border-box;
+  white-space     : nowrap;
+  transition      : var(--transition-base);
+  margin          : 0;
+  text-decoration : none;
+  cursor          : pointer;
+}
+
+
+:--btn:--over {
+  background   : black;
+  outline      : none;
+  box-shadow   : none;
+}

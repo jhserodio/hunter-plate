@@ -1,0 +1,26 @@
+.banner {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/me.jpg');
+  background-size: 100% auto;
+  background-position: center top;
+  filter: grayscale(100%);
+}
+
+.banner p {
+  color: var(--gray-nude);
+  padding: 0 var(--space-base);
+  box-sizing: border-box;
+}
+
+@media (--screen-small){
+  .banner {
+    min-height: 360px;
+    background-image: url('../images/me-mobile.jpg');
+    background-size: 100%  auto;
+    background-repeat: no-repeat;
+  }
+}

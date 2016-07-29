@@ -1,0 +1,3 @@
+/*media queries definitions*/
+@custom-media --screen-small  (width <= 980px);
+@custom-media --screen-large (width > 980px);

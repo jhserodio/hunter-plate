@@ -1,0 +1,26 @@
+:--list {
+  margin       : 0;
+  padding-left : var(--space-large);
+}
+
+:--list :--list  {
+  margin : var(--space-base) 0;
+}
+
+li {
+  margin : var(--space-small) 0;
+}
+
+dl {
+  margin  : 0;
+  padding : 0;
+}
+
+dt {
+  margin : var(--space-large) 0;
+}
+
+dd {
+  margin       : var(--space-base) 0;
+  padding-left : calc(var(--space-large)*2);
+}

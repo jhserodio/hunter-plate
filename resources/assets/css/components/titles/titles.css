@@ -1,0 +1,27 @@
+.title-page {
+  text-transform: uppercase;
+  color: var(--brand-dark);
+  white-space: nowrap;
+  text-shadow: var(--shadow-text);
+  margin: var(--space-small) 0;
+  line-height: normal;
+}
+
+.title-page small {
+  display: block;
+  font-size: var(--size-min);
+}
+
+.title {
+  line-height: normal;
+  margin: var(--space-base) 0;
+  text-transform: capitalize;
+}
+
+.title-small {
+  text-transform: uppercase;
+  line-height: normal;
+  text-decoration: underline;
+  font-size: var(--size-small);
+  margin: var(--space-base) 0;
+}

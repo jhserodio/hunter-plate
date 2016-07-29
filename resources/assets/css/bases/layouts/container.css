@@ -1,0 +1,10 @@
+.container {
+  max-width: var(--width-base);
+  margin: 0 auto;
+}
+
+@media (--screen-large) {
+  .container {
+    max-width: var(--width-large);
+  }
+}

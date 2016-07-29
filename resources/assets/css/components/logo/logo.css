@@ -1,0 +1,20 @@
+.logo {
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  max-width: 125px;
+}
+
+.logo h1 {
+  line-height: normal;
+  margin: 0;
+}
+
+.logo h1 small {
+  text-transform: none;
+}
+
+.logo > small {
+  align-self: flex-end;
+}

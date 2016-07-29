@@ -1,0 +1,11 @@
+/*Custom Selectors*/
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+@custom-selector :--btn a.btn, button, input[type=submit];
+
+@custom-selector :--over :hover, :focus, :active;
+
+@custom-selector :--options input[type='checkbox'], input[type='radio'];
+
+@custom-selector :--list ul, ol;

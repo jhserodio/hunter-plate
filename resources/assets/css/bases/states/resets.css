@@ -1,0 +1,15 @@
+:--list.reset {
+  list-style: none;
+  padding: 0;
+}
+
+a.reset {
+  text-decoration: none;
+}
+
+:--btn.reset {
+  color: black;
+  background: none;
+  display: inline;
+  padding: 0;
+}

@@ -1,0 +1,52 @@
+:root{
+
+  /* Spaces */
+  --space-small  : 3px;
+  --space-base   : 10px;
+  --space-large  : 25px;
+
+  /* Sizes */
+  --size-small   : .9em;
+  --size-min     : 12px;
+  --size-base    : 1em;
+  --size-default : 16px;
+  --size-large   : 1.2em;
+  --size-extra   : 2.2em;
+
+  /*Widths*/
+  --width-base: 92%;
+  --width-large: 88%;
+
+  /* Fonts */
+  --font-base: 'Ubuntu Mono', sans-serif;
+
+  /* Weights */
+  --weight-base  : 400;
+  --weight-bold  : var(--weight-base);
+
+  /* Lines */
+  --line-base    : 1em;
+  --line-default : 24px;
+  --line-large   : 2em;
+
+  /* Letter Spacing */
+  --spacing-base: .5px;
+
+  /* Radius */
+  --radius-base  : 2px;
+  --radius-total : 50%;
+
+  /*Borders*/
+  --border-base  : 1px solid var(--gray-dark);
+  --border-light : 1px solid var(--gray-light);
+  --border-focus : 1px solid var(--brand-base);
+
+  /* Transitions */
+  --transition-large : all .6s ease-out;
+  --transition-base  : all .3s ease-out;
+  --transition-small : all .05s ease-out;
+
+  /* Shadows */
+  --shadow-base  : 0 0 5px 0 rgba(0,0,0,0.16);
+  --shadow-text  : 1px 1px 5px var(--brand-half);
+}

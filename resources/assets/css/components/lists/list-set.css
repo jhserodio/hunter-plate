@@ -1,0 +1,19 @@
+.list-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin: var(--space-large) 0;
+}
+
+@media (--screen-large) {
+  .list-set > li {
+    margin: var(--space-base) var(--space-large);
+  }
+
+  .list-set > li:first-child {
+    margin-left: 0;
+  }
+
+  .list-set > li:last-child {
+    margin-right: 0;
+  }
+}

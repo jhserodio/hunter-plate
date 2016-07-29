@@ -1,0 +1,18 @@
+.card {
+  flex-grow: 1;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.card-header svg {
+  width: 60px;
+  height: 60px;
+}
+
+.card-main p {
+  margin: 0;
+}

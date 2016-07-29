@@ -5,57 +5,39 @@
 @import 'bases/config/selectors';
 @import 'bases/config/normalize';
 @import 'bases/config/colors';
-@import 'bases/config/media';
-
+@import 'bases/config/media_query-settings';
 /*elements*/
 @import 'bases/elements/body';
 @import 'bases/elements/typograph';
 @import 'bases/elements/button';
 @import 'bases/elements/lists';
-
 /*layouts*/
 @import 'bases/layouts/container';
-
 /*states*/
 @import 'bases/states/resets';
 @import 'bases/states/hidden';
 
 /*COMPONENTS - scope global components definitions*/
-
-/*logo*/
 @import 'components/logo/logo';
-/*banner*/
 @import 'components/banner/banner';
-/*titles*/
 @import 'components/titles/titles';
-/*icons*/
 @import 'components/icons/icons';
-/*cards*/
 @import 'components/cards/grid';
 @import 'components/cards/cards';
-/*lists set*/
 @import 'components/lists/list-set';
 @import 'components/lists/list-skills';
-
+@import 'components/buttons/buttons';
+@import 'components/form-box/form-control';
+@import 'components/image-box/image-flex';
 
 /*PAGES - scope view pages definitions*/
 
 @import 'pages/home/home';
-/*@import 'pages/home';
-@import 'pages/home';*/
-
-@import 'pages/about/about';
-/*@import 'pages/about';
-@import 'pages/about';*/
-
-@import 'pages/contact/contact';
-/*@import 'pages/contact';
-@import 'pages/contact';*/
+@import 'pages/home/home-desktop';
+@import 'pages/home/home-mobile';
 
 /*TEMPLATES - scope unique components definitions*/
 @import 'templates/header/header';
 @import 'templates/header/navegation';
-
 @import 'templates/main/main';
-
 @import 'templates/footer/footer';

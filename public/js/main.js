@@ -1,0 +1,1 @@
+"use strict";function _interopRequireDefault(e){return e&&e.__esModule?e:{"default":e}}function Carambola(e){console.log("Carambola "+e)}var _componentA=require("./components/componentA"),_componentA2=_interopRequireDefault(_componentA),quadrada="QUADRADA";(0,_componentA2["default"])(quadrada),Object.defineProperty(exports,"__esModule",{value:!0}),exports["default"]=Carambola;

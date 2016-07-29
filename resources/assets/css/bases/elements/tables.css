@@ -1,29 +1,46 @@
 
-:--btn {
-  color           : white;
-  border-radius   : var(--radius-base);
-  font-size       : var(--size-base);
-  font-weight     : var(--weight-base);
-  background      : var(--brand-base);
-  border          : none;
-  outline         : 0;
-  box-shadow      : none;
-  padding         : var(--space-base) var(--space-large);
-  line-height     : normal;
-  display         : inline-block;
-  text-decoration : none;
-  text-transform  : uppercase;
-  box-sizing      : border-box;
-  white-space     : nowrap;
-  transition      : var(--transition-base);
-  margin          : 0;
-  text-decoration : none;
-  cursor          : pointer;
+table {
+  width           : 100%;
+  border-collapse : collapse;
+  border-spacing  : 0;
 }
 
+thead {
+  vertical-align : middle;
+}
 
-:--btn:--over {
-  background   : black;
-  outline      : none;
-  box-shadow   : none;
+tfoot {
+  vertical-align : middle;
+}
+
+tbody {
+  vertical-align : middle;
+}
+
+th {
+  text-align  : center;
+  color       : black;
+  font-size   : var(--size-base);
+  font-weight : bold;
+}
+
+td {
+  text-align  : center;
+  padding     : calc(var(--space-base)*2) 0;
+  color       : black;
+  font-size   : var(--size-base);
+  font-weight : normal;
+  border-left : var(--border-base);
+}
+
+td:first-child {
+  border: 0;
+}
+
+tr {
+  border-top : var(--border-base);
+}
+
+tr:first-child {
+  border : 0;
 }

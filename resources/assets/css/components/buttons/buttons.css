@@ -1,0 +1,12 @@
+.btn {
+  display: block;
+  background: var(--brand-other);
+  color: white;
+  border: none;
+}
+
+.btn-save {
+  background: var(--brand-light);
+  color: var(--brand-dark);
+  border: none;
+}

@@ -5,65 +5,8 @@
   margin: calc(var(--space-base)*2) 0;
 }
 
-
-.card-grid.five {
-  margin-bottom: -10px;
-}
-
-.card-grid.five > .card {
-  padding: var(--space-large);
-  color: rgba(0,0,0,0.75);
-}
-
-/*stripes definitions*/
-.card-grid.five > .card:first-child {
-  background: #889;
-}
-.card-grid.five > .card:nth-child(2) {
-  background: #99a;
-}
-.card-grid.five > .card:nth-child(3) {
-  background: #aab;
-}
-.card-grid.five > .card:nth-child(4) {
-  background: #bbc;
-}
-.card-grid.five > .card:nth-child(5) {
-  background: #ccd;
-}
-
 @media (--screen-small) {
   .card-grid {
     flex-direction: column;
   }
-
-  .card-grid.triple > .card {
-      margin-bottom: var(--space-large);
-  }
-
-  .card-grid.five > .card {
-      min-height: 300px;
-  }
-
-}
-
-@media (--screen-large) {
-
-  .card-grid.five > .card {
-    max-width: 20%;
-    width: 20%;
-    min-height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card-grid.triple {
-    margin: calc(var(--space-large)*3) 0;
-  }
-
-  .card-grid.triple > .card {
-    max-width: 30%;
-  }
-
 }

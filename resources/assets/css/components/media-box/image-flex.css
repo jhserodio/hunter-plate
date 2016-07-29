@@ -1,0 +1,13 @@
+.image-flex {
+  height     : auto;
+  max-height : 100%;
+  max-width  : 100%;
+  position   : relative;
+  text-align : center;
+  width      : auto;
+}
+
+.image-flex img {
+  height    : auto;
+  max-width : 100%;
+}

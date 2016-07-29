@@ -33,6 +33,8 @@ var postcss        = require('gulp-postcss'),
     cache          = require('gulp-cache'),
     copy           = require('gulp-copy-rex'),
     sourcemaps     = require('gulp-sourcemaps'),
+    browsersync    = require("browser-sync"),
+    reload         = browsersync.reload,
     plumber        = require('gulp-plumber');
 
 
@@ -50,10 +52,10 @@ var src_css   = "resources/assets/css/style.css",
     dest_js   = "public/js",
     dest_html = "public",
     wtc_css   = "resources/assets/css/**/*.css",
-    wtc_css   = src_html,
+    wtc_html  = src_html,
     wtc_js    = src_js,
     wtc_img   = src_img,
-    wtc_fonts = src_font,
+    wtc_fonts = src_font;
 
 // postcss processors
 
@@ -123,8 +125,7 @@ gulp.task('postcss:prod', function () {
     .pipe(sourcemaps.init())
     .pipe(postcss(processors_prod))
     .pipe(sourcemaps.write("map"))
-    .pipe(gulp.dest(dest_css))
-    .pipe(connect.reload());
+    .pipe(gulp.dest(dest_css));
 });
 
 // imagemin task
@@ -155,7 +156,7 @@ gulp.task('babel', function() {
          .pipe(gulp.dest(dest_js));
 });
 // prod
-.task('babel:prod', function() {
+gulp.task('babel:prod', function() {
   return gulp.src(src_js)
          .pipe(babel({
            presets: ['es2015']
@@ -167,7 +168,7 @@ gulp.task('babel', function() {
 });
 
 // html minifier
-gulp.task('minify', function() {
+gulp.task('htmlmin', function() {
   return gulp.src(src_html)
          .pipe(htmlmin({collapseWhitespace: true}))
          .pipe(gulp.dest(dest_html));
@@ -180,7 +181,7 @@ gulp.task('browsersync', function(){
       baseDir: './public'
     },
     ghostMode: false,
-    port: connect_port,
+    port: 8080,
     notify: false,
     reloadOnRestart: false,
     logFileChanges: false,
@@ -193,7 +194,7 @@ gulp.task('watch', ['browsersync'], function(){
   gulp.watch(wtc_css, ['postcss', reload]);
   gulp.watch(wtc_js, ['babel', reload]);
   gulp.watch(wtc_fonts, ['copy-fonts', reload]);
-  gulp.watch(wtc_images, ['imagemin', reload]);
+  gulp.watch(wtc_img, ['imagemin', reload]);
   gulp.watch(wtc_html, ['htmlmin', reload]);
 });
 

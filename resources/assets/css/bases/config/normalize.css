@@ -12,17 +12,6 @@ html {
   height: 100%;
 }
 
-/**
- * Remove the margin in all browsers (opinionated).
- */
-
-body,
-#app,
-#app > div {
-  margin: 0;
-  height: 100%;
-}
-
 /* HTML5 display definitions
    ========================================================================== */
 

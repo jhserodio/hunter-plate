@@ -1,29 +1,61 @@
-
-:--btn {
-  color           : white;
-  border-radius   : var(--radius-base);
-  font-size       : var(--size-base);
-  font-weight     : var(--weight-base);
-  background      : var(--brand-base);
-  border          : none;
-  outline         : 0;
-  box-shadow      : none;
-  padding         : var(--space-base) var(--space-large);
-  line-height     : normal;
-  display         : inline-block;
-  text-decoration : none;
-  text-transform  : uppercase;
-  box-sizing      : border-box;
-  white-space     : nowrap;
-  transition      : var(--transition-base);
-  margin          : 0;
-  text-decoration : none;
-  cursor          : pointer;
+fieldset {
+  background: var(--gray-nude);
+  border: var(--border-base);
+  outline: 0;
+  margin: 0;
+  padding: 0;
 }
 
+legend {
+  display: block;
+  color: black;
+  font-size: var(--size-large);
+  font-weight: bold;
+  padding: 0 var(--space-large);
+  text-align: left;
+}
 
-:--btn:--over {
-  background   : black;
-  outline      : none;
-  box-shadow   : none;
+label {
+  text-transform: uppercase;
+  display: block;
+  color: black;
+  margin: var(--space-small) 0;
+  font-size: var(--size-min);
+  font-weight: normal;
+  text-align: left;
+}
+
+:--forms-txt {
+  text-transform: uppercase;
+  background: none;
+  border: var(--border-base);
+  border-radius: var(--radius-base);
+  box-shadow: none;
+  box-sizing: border-box;
+  color: white;
+  padding: calc(var(--space-base)/2) var(--space-base);
+  font-size: var(--size-min);
+  margin: calc(var(--space-base)/2) 0;
+  transition: var(--transition-base);
+}
+
+:--forms-txt:--over {
+  box-shadow: none;
+  outline: none;
+}
+
+select option {
+  color: black;
+}
+
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: calc(var(--space-base)/2);
+  background: black;
 }

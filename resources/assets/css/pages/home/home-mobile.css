@@ -1,14 +1,6 @@
-/*=========================================================================
-04 - PAGES
-=========================================================================*/
-
-
-.teste1 {
-  background: var(--brand-dark);
-  color: var(--brand-base);
-}
-
-.teste2 {
-  background: var(--brand-light);
-  color: var(--brand-base);
+@media (--screen-small) {
+  .home-page {
+    background: var(--brand-dark);
+    color: white;
+  }
 }

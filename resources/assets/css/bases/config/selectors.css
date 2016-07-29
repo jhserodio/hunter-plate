@@ -8,4 +8,7 @@
 
 @custom-selector :--options input[type='checkbox'], input[type='radio'];
 
+@custom-selector :--forms-txt input[type="text"], input[type="password"], input[type="email"],
+                                input[type="number"], input[type="tel"], input[type="search"], textarea, select;
+
 @custom-selector :--list ul, ol;

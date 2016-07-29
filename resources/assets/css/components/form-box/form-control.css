@@ -1,0 +1,19 @@
+.form-control {
+  display: block;
+  margin: var(--space-base) 0;
+  height: auto;
+  width: 100%;
+}
+
+.form-control > * {
+  display: block;
+  margin: var(--space-base) 0;
+}
+
+.form-control > *:first-child {
+  margin-top: 0;
+}
+
+.form-control > *:last-child {
+  margin-bottom: 0;
+}

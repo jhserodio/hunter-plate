@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "http-server ./",
-    "start" : "gulp",
+    "start": "gulp",
     "production": "gulp production"
   },
   "repository": {
@@ -42,6 +42,7 @@
     "postcss-import": "^8.1.2",
     "postcss-media-minmax": "^2.1.2",
     "postcss-normalize": "^0.1.2",
-    "postcss-style-guide": "^0.13.0"
+    "postcss-style-guide": "^0.13.0",
+    "psg-theme-1column": "^0.4.0"
   }
 }

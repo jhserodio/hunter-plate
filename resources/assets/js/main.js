@@ -1,5 +1,7 @@
-import Carambola from './components/componentA';
+import toggleElement from './components/componentA';
 
-const quadrada = "QUADRADA 1";
+// DOM HEADER ELEMENT
+var btnMenu = document.getElementById('active-menu');
+var displayMenu = document.getElementById('display-menu');
 
-Carambola(quadrada);
+toggleElement(btnMenu, displayMenu);

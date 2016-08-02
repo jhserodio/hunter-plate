@@ -1,3 +1,5 @@
-export default function Carambola (adj) {
-  console.log("Carambola " + adj )
+export default function toggleElement (btn, display) {
+  btn.addEventListener('click', () => {
+    display.classList.toggle('_active');
+  })
 }

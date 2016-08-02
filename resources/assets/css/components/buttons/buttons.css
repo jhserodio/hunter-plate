@@ -5,8 +5,14 @@
   border: none;
 }
 
-.btn-save {
-  background: var(--brand-light);
+.btn-icon {
+  background: none;
   color: var(--brand-dark);
   border: none;
+  padding: 0;
+}
+
+.btn-icon:--over {
+  background: none;
+  color: var(--gray-nude);
 }

@@ -2,7 +2,7 @@ var path    = require('path');
 var webpack = require('webpack');
 
 /* Working Directory */
-var src = './resources/assets/js/';
+var src = path.join(__dirname, 'resources/assets/js/');
 
 module.exports = {
   entry: {
@@ -13,7 +13,7 @@ module.exports = {
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['','.js']
   },
   module: {
     loaders: [

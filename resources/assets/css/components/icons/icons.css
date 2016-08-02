@@ -1,6 +1,13 @@
 .icon {
-  width: 32px;
-  height: auto;
-  position: relative;
   display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon._menu {
+  height: 1.7em;
+  width: 1.6em;
 }

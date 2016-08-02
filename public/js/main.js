@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	var _componentA = __webpack_require__(1);
 
@@ -52,22 +52,26 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var quadrada = "QUADRADA 1";
+	// DOM HEADER ELEMENT
+	var btnMenu = document.getElementById('active-menu');
+	var displayMenu = document.getElementById('display-menu');
 
-	(0, _componentA2.default)(quadrada);
+	(0, _componentA2.default)(btnMenu, displayMenu);
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.default = Carambola;
-	function Carambola(adj) {
-	  console.log("Carambola " + adj);
+	exports.default = toggleElement;
+	function toggleElement(btn, display) {
+	  btn.addEventListener('click', function () {
+	    display.classList.toggle('_active');
+	  });
 	}
 
 /***/ }
